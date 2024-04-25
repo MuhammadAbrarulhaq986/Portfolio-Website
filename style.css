@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+  --modal-duration: 2s;
+  /* --secondary-color: #a3cb38; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background: rgb(197, 109, 1);
+  background: radial-gradient(
+    circle,
+    rgba(197, 109, 1, 1) 0%,
+    rgba(56, 9, 70, 1) 100%
+  );
+  /* background-color:black; */
+  font-family: "Lato", sans-serif;
+  margin: 10px;
+  transition: transform 0.5s ease;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body.show-nav {
+  transform: translate(200px);
+}
+
+nav {
+  background-color: var(--primary-color);
+  border-right: 2px solid rgba(200, 200, 200, 0.1);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  z-index: 100;
+  transform: translateX(-100%);
+}
+
+nav .logo {
+  padding: 30px 0;
+  text-align: center;
+}
+
+nav .logo img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li {
+  border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+  padding: 20px;
+}
+
+nav ul li:first-of-type {
+  border-top: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+/* *********************  Header Styling  **************************************************************** */
+/* header>img{
+  
+} */
+
+header {
+  /* background: rgb(255,160,44);
+  background: radial-gradient(circle, rgba(255,160,44,1) 0%, rgba(110,34,134,1) 100%); */
+  box-shadow: 5px 5px 15px purple;
+  color: white;
+  text-shadow: 5px 5px 15px yellow;
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  opacity: 1; /* Set the opacity to 1 for full opacity */
+  /* padding: 40px 10px; */
+}
+header > img {
+  width: 110%;
+  height: 450px;
+  box-shadow: -5px -5px 20px purple;
+}
+
+header > h1 {
+  color: white;
+  text-shadow: 5px 5px 15px yellow;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  font-size: 50px;
+  padding: 0 5px;
+  width: 100%;
+}
+
+header > p {
+  color: white;
+  text-shadow: 5px 5px 15px yellow;
+  padding: 0 5px;
+  position: absolute;
+  top: 200px; /* Changed from 200px to 150px */
+  left: 20px;
+  width: 100%;
+}
+
+button {
+  /* background-color: var(--secondary-color); */
+  border: 0;
+  border-radius: 5px;
+  color: black;
+  text-shadow: 5px 5px 15px yellow;
+  cursor: pointer;
+  padding: 10px 10px;
+  margin-left: 10px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.toggle {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  color: white;
+  top: 20px;
+  left: 20px;
+}
+
+.cta-btn {
+  padding: 10px 30px;
+  font-size: 25px;
+}
+
+.container {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
+
+.modal {
+  background-color: #a3cb38;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-header {
+  background-color: var(--primary-color);
+  color: #a3cb38;
+  padding: 15px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-form div {
+  margin: 15px 0;
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-form input {
+  padding: 10px;
+  width: 100%;
+}
+
+.close-btn {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  color: #a3cb38;
+}
+/* *********************  TEXT Styling  **************************************************************** */
+
+ul {
+  color: white;
+  text-shadow: 5px 5px 15px yellow;
+  box-shadow: -15px -1px 50px yellow;
+  transition: 0.3s;
+}
+ul :hover {
+  color: white;
+  text-shadow: 5px 5px 15px purple;
+  box-shadow: -15px -1px 50px purple;
+  opacity: 0.8;
+}
+
+.container {
+  color: white;
+  text-shadow: 5px 5px 15px yellow;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 50px;
+}
+/* *********************  CardStyling  **************************************************************** */
+ a{
+  color: white;
+  text-decoration: none;
+ }
+.card-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  text-shadow: 5px 5px 15px yellow;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  box-shadow: -15px -1px 50px purple;
+}
+/* ***************************************************************************** */
+.card-pro:hover {
+  border: 10px solid rgba(136, 0, 255, 0.6);
+  color: black;
+  text-shadow: 5px 5px 15px black;
+  opacity: 0.8;
+}
+
+.card-pro {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+}
+/* ***************************************************************************** */
+
+.card-html:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: 10px solid orange;
+  color: black;
+  text-shadow: 5px 5px 15px black;
+  opacity: 0.8;
+}
+
+.card-html {
+  transition: background-color 0.5s ease;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+}
+/* ***************************************************************************** */
+
+.card-css:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: 10px solid rgb(17, 17, 210);
+  color: black;
+  text-shadow: 5px 5px 15px black;
+  opacity: 0.8;
+}
+
+.card-css {
+  transition: background-color 0.5s ease;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+}
+/* ***************************************************************************** */
+.card-js:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: 10px solid yellow;
+  color: black;
+  text-shadow: 5px 5px 15px black;
+  opacity: 0.8;
+}
+.card-js {
+  transition: background-color 0.5s ease;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  position: relative;
+}
+
+.card-header {
+  color: white;
+  text-shadow: 2px 2px 15px red;
+  padding: 15px;
+  font-size: 40px;
+  margin-left: auto;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  margin: auto;
+  font-size: 40px;
+  font-weight: 900;
+  text-shadow: 5px 5px 15px yellow;
+}
+
+.card-text {
+  text-shadow: 5px 5px 15px yellow;
+  padding: 20px;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 2;
+  }
+}

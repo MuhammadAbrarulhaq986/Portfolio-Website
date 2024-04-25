@@ -1,0 +1,256 @@
+body {
+    margin: 10px;
+    padding: 10px;
+}
+
+.pala {
+    background-color: #74C69D;
+}
+
+nav {
+    color: #74C69D;
+    border-radius: 30px;
+    border: 5px solid #74C69D;
+}
+
+.container-fluid {
+    background-color: #74C69D;
+    border-radius: 30px;
+    color: #74C69D;
+}
+
+.navbar .nav-link-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+
+}
+
+.navbar .nav-link {
+    color: white;
+    /* background-color: #74C69D; */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    padding: 10px;
+}
+
+/* *************************************************************************** */
+
+.head-text {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    height: 50%;
+    width: 100%;
+
+}
+
+#image-head {
+    height: 50%;
+    width: 50%;
+    /* Add the following lines to size the image */
+    object-fit: cover;
+    /* This line ensures that the image maintains its aspect ratio */
+    max-width: 100%;
+    /* This line sets the maximum width of the image */
+    max-height: 100%;
+    /* This line sets the maximum height of the image */
+}
+
+div>h5 {
+    font-weight: 700;
+    line-height: 50px;
+    color: white;
+    margin: 10px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+}
+
+div>h4 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    color: white;
+    /* background-color: #74C69D; */
+    width: 500px;
+    height: 100px;
+    margin: 10px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+}
+
+div>p {
+    color: white;
+    /* background-color: #74C69D; */
+    margin: 10px;
+    width: 380px;
+    height: 200px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* *************************************************************************** */
+button {
+    color: white;
+    background: black;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px #98FB98,
+        -5px 5px 5px #98FB98,
+        -5px -5px 5px #98FB98,
+        5px -5px 5px #98FB98;
+}
+
+
+span {
+    margin-top: 10px;
+    color: #74C69D;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+
+}
+
+h6 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 3px rgba(0, 255, 128, 0.8);
+}
+
+.para-body {
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    height: 50%;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
+
+}
+
+/* *************************************************************************** */
+
+#body-text-img>img {
+    justify-content: space-between;
+    width: 200px;
+    height: 100%;
+    padding: auto;
+    margin-left: 50px;
+}
+
+
+#body-text-2 {
+    color: rgb(5, 5, 5);
+    background-color: white;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    height: 50%;
+    width: 100%;
+}
+
+.big-para {
+    color: black;
+}
+
+.small-para {
+    color: black;
+}
+
+#body-text-2>img {
+    height: 50%;
+    width: 50%;
+    /* Add the following lines to size the image */
+    object-fit: cover;
+    /* This line ensures that the image maintains its aspect ratio */
+    max-width: 100%;
+    /* This line sets the maximum width of the image */
+    max-height: 100%;
+    /* This line sets the maximum height of the image */
+
+}
+
+/* *************************************************************************** */
+
+.team-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.card-text {
+    color: #74C69D;
+    text-shadow: 1px 1px 2px rgba(0, 255, 55, 0.253);
+    font-weight: 600;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 250px;
+    height: 400px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.card-img-top {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+
+}
+
+.card-img-top {
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.btn-1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* *************************************************************************** */
+
+.last-bar {
+    display: flex;
+    background-color: #74C69D;
+    width: 100%;
+    height: 50%;
+    padding: 30px;
+    /* overflow: hidden; */
+}
+
+.mine-icons {
+    display: inline;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.last-words {
+    color: white;
+    margin-left: auto;
+    overflow: auto;
+}
+
+
+
+/* *************************************************************************** */

@@ -1,0 +1,17 @@
+*{
+    margin: auto;
+    padding: auto;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+body {
+    background-color: burlywood;
+}
+
+h1 {
+    color: rgb(255, 183, 0);
+    background-color: black;
+    text-align: center;
+}
+

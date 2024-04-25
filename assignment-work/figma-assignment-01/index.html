@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practics</title>
+    <!--!=============== font awesome cdn ===========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--!=============== css style sheet ===========-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/responsive.css" />
+    <link rel="stylesheet" href="icon.js">
+</head>
+
+<body>
+    <!--?============= This is main container ===========-->
+    <section class="main-container m-auto">
+        <!--!============== header section starts ==============-->
+        <div class="header-container">
+            <header class="header section d-flex m-auto">
+                <!--todo=== logo ===-->
+                <div class="logo">
+                    <img src="./images/logo.jpg" alt="tere web logo" />
+                </div>
+
+                <!--todo=== responsive icons ===-->
+                <div class="responsive-icons pointer">
+                    <i class="fa-solid fa-bars manu-bar"></i>
+                    <i class="fa-solid fa-xmark close-btn"></i>
+                </div>
+                <!--todo=== navbar ===-->
+                <nav class="navbar txt-cap d-flex pointer">
+                    <a href="#home">home</a>
+                    <a href="#howWorks">how tere workds</a>
+                    <a href="#benefits">tere benefits</a>
+                    <button class="btn txt-cap br-radius-6 pointer">help center</button>
+                </nav>
+            </header>
+        </div>
+
+        <!--?============= This is  container ===========-->
+        <section class="container">
+            <!--!============== hero section starts ==============-->
+            <main id="home" class="hero-section section grid grid-two-cols">
+                <!--todo====== first col ======-->
+                <div class="hero-content d-flex dir-col">
+                    <h1 class="txt-up">
+                        download app,<br />save money, make<br />friends!
+                    </h1>
+                    <p class="txt-cap">
+                        its simple and its free. play your part in reducing carbon
+                        footprint and help mother nature to sustain its beauty. So what
+                        are you waiting for?<br />lets ride together
+                    </p>
+                    <div class="hero-btns d-flex">
+                        <button class="play-download"><i class="fa-brands fa-google-play"></i>DOWNLOAD</button>
+                        <button class="apple-download"><i class="fa-brands fa-apple"></i>DOWNLOAD</button>
+                    </div>
+                </div>
+
+                <!--todo====== second col ======-->
+                <div class="hero-image">
+                    <img src="./images/map.png" alt="map" />
+                </div>
+            </main>
+            <!--!============== search bar section starts ==============-->
+            <section class="searchBar-section section">
+                <div class="searchBar-content d-flex br-radius-6">
+                    <p class="txt-cap">
+                        let's go. get a link<br />
+                        to download the app.
+                    </p>
+                    <div class="searchBar d-flex">
+                        <input type="search" class="br-radius-4" placeholder="Enter Mobile Phone Number"
+                            name="searchBar" />
+                        <button class="btn txt-cap br-radius-4">apply to drive</button>
+                    </div>
+                </div>
+            </section>
+            <!--!============== how works section starts ==============-->
+            <section class="howWorks-section section">
+                <div class="howWorks-content">
+                    <!--?======== heading ========-->
+                    <div id="howWorks" class="howWorks-heading d-flex dir-col">
+                        <h2 class="txt-up txt-center common-heading">
+                            how <span class="tag">tere</span> works
+                        </h2>
+                        <p class="txt-cap txt-center">
+                            download and install the tere app. Enter your phone number and
+                            make your user account. when approved you may start driving
+                        </p>
+                        <h3 class="benifits d-none txt-up">
+                            <span class="tag txt-up">tere</span> benifits
+                        </h3>
+                    </div>
+
+                    <div class="grid grid-three-cols">
+                        <!--?======== col one ========-->
+                        <div class="col-one d-flex dir-col">
+                            <!--todo=== item one ===-->
+                            <div class="howWorks-item txt-right d-flex dir-col">
+                                <div class="tag-wrapper br-radius-50 d-flex p-relative">
+                                    <span class="tag br-radius-50 d-flex">1</span>
+                                </div>
+
+                                <h2 class="txt-up">request a ride</h2>
+                                <p class="txt-cap">
+                                    have to reach office or going for shopping?<br />
+                                    just put your current location and destination and search a
+                                    ride that suits you.
+                                </p>
+                            </div>
+                            <!--todo=== item two ===-->
+                            <div class="howWorks-item txt-right d-flex dir-col">
+                                <div class="tag-wrapper br-radius-50 d-flex p-relative">
+                                    <span class="tag dbl-1 br-radius-50 d-flex">3</span>
+                                    <span class="tag dbl-2 br-radius-50 d-flex d-none">2</span>
+                                </div>
+                                <h2 class="txt-up">instant notifications</h2>
+                                <p class="txt-cap">
+                                    have to reach office or going for shopping?<br />
+                                    just put your current location and destination and search a
+                                    ride that suits you.
+                                </p>
+                            </div>
+                        </div>
+                        <!--?======== col two ========-->
+                        <div class="col-two d-flex dir-col p-relative">
+                            <img class="p-absolute elippse" src="./images/Ellipse 1.png" alt="" />
+                            <img class="p-absolute mobile" src="./images/mobile.png" alt="" />
+                        </div>
+                        <!--?======== col three ========-->
+                        <div class="col-three d-flex dir-col">
+                            <!--todo=== item three ===-->
+                            <div class="howWorks-item txt-left d-flex dir-col">
+                                <div class="tag-wrapper br-radius-50 d-flex p-relative">
+                                    <span class="tag dbl-1 br-radius-50 d-flex">2</span>
+                                    <span class="tag dbl-2 br-radius-50 d-flex d-none">3</span>
+                                </div>
+                                <h2 class="txt-up">Post a ride</h2>
+                                <p class="txt-cap">
+                                    going somewhere but hate to<br />travel alone - <br />
+                                    just post your ride details and <br />publish it.
+                                </p>
+                            </div>
+                            <!--todo=== item four ===-->
+                            <div class="howWorks-item txt-left d-flex dir-col">
+                                <div class="tag-wrapper br-radius-50 d-flex p-relative">
+                                    <span class="tag br-radius-50 d-flex">4</span>
+                                </div>
+                                <h2 class="txt-up">cashless payment</h2>
+                                <p class="txt-cap">
+                                    payment made easy by using<br />your own wallet - no more<br />
+                                    cash to carry
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--!============== tere benifits section starts ==============-->
+            <section class="benefits-section section">
+                <div class="benefits-content">
+                    <!--todo=== benefit heading ===-->
+                    <h2 id="benefits" class="txt-up txt-center common-heading">
+                        <span class="tag txt-up">tere </span>benefits
+                    </h2>
+                    <!--todo========== benefits items ==========-->
+                    <div class="d-flex dir-col benefits-item-container">
+                        <!--todo=== item one ===-->
+                        <div class="benefit-item item-1 grid grid-two-cols">
+                            <div class="benefit-item-content d-flex dir-col txt-left">
+                                <!--?=== item heading ===-->
+                                <div class="benefit-subHeading">
+                                    <span class="tag benefit-tag">01.</span>
+                                    <h4 class="txt-cap">flexible<br />working hours</h4>
+                                </div>
+                                <!--?=== item image ===-->
+                                <div class="benefit-img dbl-2 d-none">
+                                    <img src="./images/work.png" alt="work" />
+                                </div>
+                                <p class="txt-cap">
+                                    you can decide when, and how much time you want to drive.
+                                </p>
+                            </div>
+                            <!--?=== item image ===-->
+                            <div class="benefit-img dbl-1">
+                                <img src="./images/late.png" alt="late" />
+                            </div>
+                        </div>
+
+                        <!--todo=== item two ===-->
+                        <div class="benefit-item benefit-item-2 grid grid-two-cols">
+                            <!--?=== item image ===-->
+                            <div class="benefit-img dbl-1">
+                                <img src="./images/money.png" alt="money" />
+                            </div>
+                            <div class="benefit-item-content d-flex dir-col txt-left">
+                                <!--?=== item heading ===-->
+                                <div class="benefit-subHeading">
+                                    <span class="tag benefit-tag">02.</span>
+                                    <h4 class="txt-cap">Earnings</h4>
+                                </div>
+                                <!--?=== item image ===-->
+                                <div class="benefit-img dbl-2 d-none">
+                                    <img src="./images/earning.png" alt="" />
+                                </div>
+                                <p class="txt-cap">by driving with tere you can earn more.</p>
+                            </div>
+                        </div>
+                        <!--todo=== item three ===-->
+                        <div class="benefit-item grid grid-two-cols">
+                            <div class="benefit-item-content d-flex dir-col txt-left">
+                                <!--?=== item heading ===-->
+                                <div class="benefit-subHeading">
+                                    <span class="tag benefit-tag">03.</span>
+                                    <h4 class="txt-cap">customer<br />support 24/7</h4>
+                                </div>
+
+                                <!--?=== item image ===-->
+                                <div class="benefit-img dbl-2 d-none">
+                                    <img src="./images/work.png" alt="work" />
+                                </div>
+                                <p class="txt-cap">
+                                    you can decide when, and how much time you want to drive.
+                                </p>
+                            </div>
+                            <!--?=== item image ===-->
+                            <div class="benefit-img dbl-1">
+                                <img src="./images/work.png" alt="work" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--!============== footer section starts ==============-->
+            <footer class="footer-section section">
+                <div class="grid grid-four-cols">
+                    <!--todo=== col one ===-->
+                    <div class="footer-logo footer-item d-flex dir-col">
+                        <img src="./images/logo.jpg" alt="this is footer logo" />
+                    </div>
+                    <!--todo=== col two ===-->
+                    <div class="friend footer-item d-flex dir-col">
+                        <h4 class="footer-subHeading txt-cap">be our friend</h4>
+                        <p class="txt-cap">3,season park, jakarta</p>
+                        <p class="txt-cap">support@foodyar.co,id</p>
+                        <p class="txt-cap">021-1111-2222</p>
+                    </div>
+
+                    <!--todo=== col three ===-->
+                    <div class="friend footer-item item-3 d-flex dir-col">
+                        <h4 class="footer-subHeading txt-cap">be our friend</h4>
+                        <p class="txt-cap">3,season park, jakarta</p>
+                        <p class="txt-cap">support@foodyar.co,id</p>
+                        <p class="txt-cap">021-1111-2222</p>
+                    </div>
+                    <!--todo=== col four ===-->
+                    <div class="footer-btns footer-item d-flex dir-col">
+
+                        <button class="play-download"><i class="fa-brands fa-google-play"></i> DOWNLOAD</button>
+                        <button class="apple-download"><i class="fa-brands fa-apple"></i>DOWNLOAD</button>
+                        <!-- <a href="#"
+                ><img
+                  src="./assets/images/download1.png"
+                  alt="this is hero download btn"
+                />
+              </a>
+              <a href="#"
+                ><img
+                  src="./assets/images/download.png"
+                  alt="this is hero second download btn"
+              /></a> -->
+                    </div>
+                </div>
+                <p class="copyright txt-cap txt-center">
+                    All rights reserved tere by codemotics 2022
+                </p>
+            </footer>
+            <!--!============== script section starts ==============-->
+        </section>
+    </section>
+
+    <script src="./function.js"></script>
+</body>
+
+</html>
