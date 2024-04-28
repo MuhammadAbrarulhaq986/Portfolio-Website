@@ -11,19 +11,17 @@
 
 body {
   color: white;
-  background: rgb(197, 109, 1);
-  background: radial-gradient(
-    circle,
-    rgba(197, 109, 1, 1) 0%,
-    rgba(56, 9, 70, 1) 100%
+  background: rgb(41, 24, 11);
+  background: linear-gradient(
+    89deg,
+    rgba(41, 24, 11, 1) 0%,
+    rgba(43, 53, 25, 1) 98%
   );
-  /* background-color:black; */
-  font-family: "Lato", sans-serif;
   margin: 10px;
   transition: transform 0.5s ease;
   overflow-x: hidden;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 5px;
 }
 
 body.show-nav {
@@ -85,40 +83,52 @@ nav ul li a:hover {
 header {
   /* background: rgb(255,160,44);
   background: radial-gradient(circle, rgba(255,160,44,1) 0%, rgba(110,34,134,1) 100%); */
-  box-shadow: 5px 5px 15px purple;
+  box-shadow: 5px 5px 15px black;
   color: white;
-  text-shadow: 5px 5px 15px yellow;
+  text-shadow: 5px 5px 15px aqua;
   font-size: 30px;
-  position: relative;
+  /* position: relative; */
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   opacity: 1; /* Set the opacity to 1 for full opacity */
   /* padding: 40px 10px; */
 }
 header > img {
-  width: 110%;
-  height: 450px;
-  box-shadow: -5px -5px 20px purple;
+  width: 1200px;
+  height: auto;
+  box-shadow: -5px -5px 20px black;
 }
 
-header > h1 {
+header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+}
+/* header > div > h1 {
   color: white;
-  text-shadow: 5px 5px 15px yellow;
+  text-shadow: 5px 5px 15px green;
   position: absolute;
-  top: 70px;
-  left: 20px;
+  margin-bottom: 500px;
+  margin-left: 20px;
   font-size: 50px;
-  padding: 0 5px;
+  padding: 5px 5px;
   width: 100%;
-}
+} */
 
-header > p {
+header > div > p {
   color: white;
-  text-shadow: 5px 5px 15px yellow;
-  padding: 0 5px;
+  text-shadow: 5px 5px 15px black;
+  padding: 5px 5px;
   position: absolute;
-  top: 200px; /* Changed from 200px to 150px */
-  left: 20px;
+  margin-bottom: 400px;
+  margin-left: 20px;
   width: 100%;
+  font-size: 40px;
 }
 
 button {
@@ -226,29 +236,30 @@ button:focus {
 
 ul {
   color: white;
-  text-shadow: 5px 5px 15px yellow;
-  box-shadow: -15px -1px 50px yellow;
+  text-shadow: 5px 5px 15px orange;
+  box-shadow: -15px -1px 50px orange;
   transition: 0.3s;
+  font-size: 20px;
 }
 ul :hover {
   color: white;
-  text-shadow: 5px 5px 15px purple;
-  box-shadow: -15px -1px 50px purple;
+  text-shadow: 5px 5px 15px orange;
+  box-shadow: -15px -1px 50px green;
   opacity: 0.8;
 }
 
 .container {
   color: white;
-  text-shadow: 5px 5px 15px yellow;
+  text-shadow: 5px 5px 15px orangered;
   padding: 5px;
   font-size: 20px;
   line-height: 50px;
 }
 /* *********************  CardStyling  **************************************************************** */
- a{
+a {
   color: white;
   text-decoration: none;
- }
+}
 .card-section {
   align-items: center;
   display: flex;
@@ -264,11 +275,13 @@ ul :hover {
   justify-content: center;
   text-align: center;
   flex-direction: row;
-  box-shadow: -15px -1px 50px purple;
+  box-shadow: -2px 2px 30px black;
+  border-radius: 30px;
 }
 /* ***************************************************************************** */
 .card-pro:hover {
-  border: 10px solid rgba(136, 0, 255, 0.6);
+  box-shadow: -2px 2px 30px yellow;
+  border: 3px solid green;
   color: black;
   text-shadow: 5px 5px 15px black;
   opacity: 0.8;
@@ -283,12 +296,13 @@ ul :hover {
   justify-content: center;
   margin: 10px;
   position: relative;
+  border-radius: 30px;
 }
 /* ***************************************************************************** */
 
 .card-html:hover {
-  background-color: rgba(255, 255, 255, 0);
-  border: 10px solid orange;
+  box-shadow: -2px 2px 30px orange;
+  border: 3px solid orangered;
   color: black;
   text-shadow: 5px 5px 15px black;
   opacity: 0.8;
@@ -305,12 +319,13 @@ ul :hover {
   justify-content: center;
   margin: 10px;
   position: relative;
+  border-radius: 30px;
 }
 /* ***************************************************************************** */
 
 .card-css:hover {
-  background-color: rgba(255, 255, 255, 0);
-  border: 10px solid rgb(17, 17, 210);
+  box-shadow: -2px 2px 30px aqua;
+  border: 3px solid darkblue;
   color: black;
   text-shadow: 5px 5px 15px black;
   opacity: 0.8;
@@ -327,11 +342,12 @@ ul :hover {
   justify-content: center;
   margin: 10px;
   position: relative;
+  border-radius: 30px;
 }
 /* ***************************************************************************** */
 .card-js:hover {
-  background-color: rgba(255, 255, 255, 0);
-  border: 10px solid yellow;
+  box-shadow: -2px 2px 30px yellow;
+  border: 3px solid lime;
   color: black;
   text-shadow: 5px 5px 15px black;
   opacity: 0.8;
@@ -347,11 +363,12 @@ ul :hover {
   justify-content: center;
   margin: 10px;
   position: relative;
+  border-radius: 30px;
 }
 
 .card-header {
   color: white;
-  text-shadow: 2px 2px 15px red;
+  text-shadow: 2px 2px 15px black;
   padding: 15px;
   font-size: 40px;
   margin-left: auto;
@@ -365,7 +382,7 @@ ul :hover {
   margin: auto;
   font-size: 40px;
   font-weight: 900;
-  text-shadow: 5px 5px 15px yellow;
+  text-shadow: 5px 5px 15px orangered;
 }
 
 .card-text {
