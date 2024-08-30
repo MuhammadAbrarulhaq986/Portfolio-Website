@@ -3,131 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
-    <title>Landing Page</title>
   </head>
-
   <body>
-    <!-- Left Navigation -->
-    <nav>
-      <div class="logo">
-        <!-- <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="user" /> -->
-        <img src="./image/user.jpg" alt="user" />
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+      <div class="nav-container">
+        <!-- <a href="#" class="nav-logo">Logo</a> -->
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
     </nav>
 
-    <!-- Header Section-->
-    <header>
-      <img src="./image/header-img.png" alt="img" />
-      <button class="toggle" id="toggle">
-        <i class="fa fa-bars fa-2x"></i>
-      </button>
-      <div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <h1>Welcome to my Portfolio</h1>
+        <p>A showcase of my projects and skills</p>
+        <button class="hero-btn">Learn More</button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="about-container">
+        <h2>About Me</h2>
         <p>
-      <b >Wellcome to my Landing Page</b>
-      <br>
-        Hello I'm Muhammad Abrar ul haq <br />
-      </p>
-    </div>
-      <!-- <button class="cta-btn" id="open">Sign Up</button> -->
-    </header>
-    <!-- ******************* Maine Contant ****************************** -->
-    <div class="container">
-      <h2>
-        Student at SMIT (Saylani Mass Information Technology). 
-        Full Stack Developer: HTML5 / CSS3 / JavaScript / Bootstrap / Git & GitHub.
-      </h2>
-      <hr />
-    </div>
-  </div>
-  <!-- *************************************************************** -->
-  <div class="card-section"><h2>Progects and Assignments</h2></div>
-  <div class="card-container">
-    <div class="card-pro">
-      <a href="#">
-      <div class="card-body">
-        <h5 class="card-title">Projects</h5>
-        <p class="card-text">All of my assignments from SMIT</p>
-      </a>  
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+          nulla auctor, vestibulum magna sed, convallis ex.
+        </p>
+        <img src="profile-pic.jpg" alt="Profile Picture" />
       </div>
-    </div>
+    </section>
 
-    <div class="card-html">
-      <a href="#">
-      <div class="card-body">
-        <h5 class="card-title">HTML5</h5>
-        <p class="card-text">Hypertext Markup Language, is the standard language for creating web pages and web applications.</p>
-      </a>
+    <!-- Projects Section -->
+    <section class="projects">
+      <div class="projects-container">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="project1.jpg" alt="Project 1" />
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="project-card">
+            <img src="project2.jpg" alt="Project 2" />
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="project-card">
+            <img src="project3.jpg" alt="Project 3" />
+            <h3>Project 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="card-css">
-      <a href="#">
-
-      <div class="card-body">
-        <h5 class="card-title">CSS3</h5>
-        <p class="card-text">CSS, or Cascading Style Sheets, is used to style the presentation of HTML elements on a webpage.</p>
-      </a>
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="contact-container">
+        <h2>Get in Touch</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <button class="contact-btn">Send</button>
+        </form>
       </div>
-    </div>
+    </section>
 
-    <div class="card-js">
-      <a href="#">
-      <div class="card-body">
-        <h5 class="card-title">JavaScript</h5>
-        <p class="card-text">JS: is a programming language primarily used for adding interactivity and dynamic behavior to webpages.</p>
-      </a>
-      </div>
-    </div>
-
-
-  </div>
-</div>
-    <!-- ******************* Sign up Form ****************************** -->
-    <!-- Modal -->
-    <!-- <div class="modal-container" id="modal">
-            <div class="modal">
-                <button class="close-btn" id="close">
-                    <i class="fa fa-times"></i>
-                </button>
-                <div class="modal-header">
-                    <h3>Sign up</h3>
-                </div>
-                <div class="modal-contant">
-                    <p>Register for classes</p>
-                    <form class="modal-form">
-                        <div>
-                            <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Enter Name" />
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Enter Email" />
-                        </div>
-                        <div>
-                            <label for="password">password</label>
-                            <input type="password" id="password" placeholder="Enter password" />
-                        </div>
-                        <div>
-                            <label for="password2">Confirm Password </label>
-                            <input type="password" id="password2" placeholder="Confirm Password " />
-                        </div>
-                        <input type="submit" value="Submit" class="submit-btn">
-                    </form>
-                </div>
-            </div>
-        </div> -->
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2023 Portfolio Website</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
