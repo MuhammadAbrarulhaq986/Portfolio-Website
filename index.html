@@ -1,88 +1,73 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
+    <title>My Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="nav-bar">
-      <div class="nav-container">
-        <!-- <a href="#" class="nav-logo">Logo</a> -->
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-container">
-        <h1>Welcome to my Portfolio</h1>
-        <p>A showcase of my projects and skills</p>
-        <button class="hero-btn">Learn More</button>
+    <!-- Home Section -->
+    <section id="home">
+      <div class="overlay">
+        <h1>Welcome to my Portfolio Website</h1>
+        <p><i>A front end developer From Pakistan.</i></p>
       </div>
     </section>
+    <hr />
+    <br />
 
     <!-- About Section -->
-    <section class="about">
-      <div class="about-container">
-        <h2>About Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
-          nulla auctor, vestibulum magna sed, convallis ex.
-        </p>
-        <img src="profile-pic.jpg" alt="Profile Picture" />
-      </div>
+    <section id="about">
+      <h1>About Me</h1>
+      <p>
+        Hi my name is Muhmmad Abrar ul haq currently lerning Web and App
+        developement at SMIT .
+      </p>
     </section>
 
     <!-- Projects Section -->
-    <section class="projects">
-      <div class="projects-container">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-          <div class="project-card">
-            <img src="project1.jpg" alt="Project 1" />
-            <h3>Project 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div class="project-card">
-            <img src="project2.jpg" alt="Project 2" />
-            <h3>Project 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div class="project-card">
-            <img src="project3.jpg" alt="Project 3" />
-            <h3>Project 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
+    <section id="projects">
+      <h1>My Projects</h1>
+      <ul>
+        <li>
+          <h2>Project 1</h2>
+          <p>All of my seven month of hard work Projects.</p>
+          <a
+            href="https://muhammadabrarulhaq986.github.io/SMIT-Full-Stack-Developer-WMA-Batch-11/"
+            target="_blank"
+            >View Project</a
+          >
+        </li>
+        <!-- Add more projects here -->
+      </ul>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
-      <div class="contact-container">
-        <h2>Get in Touch</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <form>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
-          <button class="contact-btn">Send</button>
-        </form>
-      </div>
+    <section id="contact">
+      <h1>Get in Touch</h1>
+      <p>Contact information.</p>
+      <ul>
+        <li><a href="mailto:your_email@example.com">Email</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/your_linkedin_profile/"
+            >LinkedIn</a
+          >
+        </li>
+        <!-- Add more contact information here -->
+      </ul>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; 2023 Portfolio Website</p>
-    </footer>
 
     <script src="script.js"></script>
   </body>

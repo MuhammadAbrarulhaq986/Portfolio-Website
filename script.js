@@ -1,9 +1,9 @@
-// Add event listener to hero button
-document.querySelector('.hero-btn').addEventListener('click', function () {
-    alert('Learn More button clicked!');
-});
-
-// Add event listener to contact form
-document.querySelector('.contact-btn').addEventListener('click', function () {
-    alert('Contact form submitted!');
+// script.js
+// Add event listeners to navigation links
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+    });
 });
