@@ -11,8 +11,8 @@ body {
   line-height: 1.6;
   color: white;
   background-color: black;
-  margin: 5px;
-  padding: 5px;
+  /* margin: 5px;
+  padding: 5px; */
 }
 
 /* Navigation Bar */
@@ -39,15 +39,25 @@ nav li {
 }
 
 nav a {
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
   text-decoration: none;
+  padding: 6px 18px 5px 18px;
+  text-align: center;
+  margin: auto;
+  padding: auto;
   transition: color 0.2s ease;
 }
 
-nav a:hover {
-  color: #ccc;
+nav a:hover,
+a.on {
+  color: white;
+  /* font-size: 20px; */
+  font-weight: 800;
+  border-radius: 20px;
+  background: rgb(1, 22, 25);
+  background: linear-gradient(103deg, rgb(11, 126, 0) 0%, rgb(0, 111, 111) 99%);
 }
 
 /* Sections */
@@ -57,6 +67,7 @@ section {
 }
 
 section h1 {
+  text-shadow: -1px 2px 10px black;
   margin-top: 0;
 }
 
@@ -72,7 +83,7 @@ section h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 80vh;
   background-attachment: fixed;
 }
 
@@ -81,31 +92,103 @@ section h1 {
   margin-bottom: auto;
   font-size: 25px;
   width: auto;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   padding: 2em;
   text-align: center;
-
-  box-shadow: -5px 10px 50px black;
-  text-shadow: -5px 10px 50px black;
+  box-shadow: -1px 2px 10px black;
+  text-shadow: -1px 2px 10px black;
 }
 
 /* About Section */
+#info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #about {
-  background-color: darkcyan;
+  background-image: url(./image/me.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-attachment: fixed;
+  font-size: 25px;
+  /* background-image: linear-gradient(to bottom, rgb(86, 0, 86), rgb(0, 0, 94)); */
+}
+.about-me {
+  text-shadow: -1px 2px 10px black;
+  box-shadow: -1px 2px 10px black;
+  margin: 5px;
+  padding: 5px;
+}
+#about > p {
+  font-size: 20px;
+  text-shadow: -1px 2px 10px black;
+  width: 480px;
 }
 
 /* Projects Section */
 
 #projects {
-  background-color: #f7f7f7;
   padding: 20px;
   text-align: center;
+  background: linear-gradient(0deg, black, rgb(54, 54, 54));
+  position: relative;
+  margin: 20% auto;
+  width: 90%;
+  border-radius: 10px;
+  text-shadow: -1px 2px 10px black;
+
+  /* height: 520px; */
+}
+
+.glow::before,
+.glow::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  background: linear-gradient(
+    45deg,
+    yellow,
+    orangered,
+    rgb(0, 255, 98),
+    aqua,
+    rgb(255, 83, 229),
+    rgb(255, 0, 217),
+    rgb(90, 0, 132),
+    rgb(255, 64, 0),
+    rgb(0, 140, 255)
+  );
+  background-size: 400%;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 10px;
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+
+.glow::after {
+  filter: blur(20px);
+  /* opacity: 0.99; */
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 #projects h1 {
   font-size: 36px;
   margin-bottom: 20px;
+  text-shadow: -1px 2px 10px black;
 }
 
 #projects ul {
@@ -115,13 +198,11 @@ section h1 {
 }
 
 #projects li {
-  color: black;
-  background-color: #fff;
+  color: white;
   padding: 20px;
   margin-bottom: 20px;
-  border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: -1px 2px 10px black;
 }
 
 #projects h2 {
@@ -135,15 +216,48 @@ section h1 {
 }
 
 #projects a {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #337ab7;
-  font-size: 18px;
+  padding: 6px 18px 5px 18px;
+  text-align: center;
+  margin: auto;
+  padding: auto;
 }
 
-#projects a:hover {
-  color: #23527c;
+#projects a:hover,
+a.on {
+  color: white;
+  /* font-size: 20px; */
+  font-weight: 800;
+  border-radius: 20px;
+  background: rgb(1, 22, 25);
+  background: linear-gradient(103deg, rgb(11, 126, 0) 0%, rgb(0, 111, 111) 99%);
 }
 
+#smit > a {
+  /* text-shadow: -1px 2px 20px rgb(0, 255, 255); */
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 18px 5px 18px;
+  text-align: center;
+  margin: 20px;
+  /* padding: 20px; */
+  /* added this line */
+}
+
+#smit {
+  background-image: url(./image/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  height: 30vh;
+  background-attachment: fixed;
+  font-size: 25px;
+}
 /* Contact Section */
 
 #contact ul {
@@ -157,10 +271,22 @@ section h1 {
 }
 
 #contact a {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #337ab7;
+  padding: 6px 18px 5px 18px;
+  text-align: center;
+  margin: auto;
+  padding: auto;
 }
 
-#contact a:hover {
-  color: #23527c;
+#contact a:hover,
+a.on {
+  color: white;
+  /* font-size: 20px; */
+  font-weight: 800;
+  border-radius: 20px;
+  background: rgb(1, 22, 25);
+  background: linear-gradient(103deg, rgb(11, 126, 0) 0%, rgb(0, 111, 111) 99%);
 }
