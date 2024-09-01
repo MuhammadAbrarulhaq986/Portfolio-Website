@@ -9,55 +9,54 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: white;
-  background-color: black;
-  /* margin: 5px;
-  padding: 5px; */
+  color: #fff; /* Changed to a more specific color code */
+  background-color: #000; /* Changed to a more specific color code */
 }
 
 /* Navigation Bar */
 
 nav {
-  background-color: #33333300;
-  /* padding: 10px; */
+  background-color: black; /* Changed to a more specific color code */
+  padding: 1em; /* Added padding for better spacing */
   text-align: center;
-  /* width: 800px; */
   justify-content: center;
+  text-shadow: -1px 2px 10px yellow;
 }
 
 nav ul {
+  text-shadow: -1px 2px 10px yellow;
+
   list-style: none;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   display: flex;
   justify-content: center;
-  gap: auto;
-}
-
-nav li {
+  gap: 20px; /* Changed to a more consistent gap size */
   margin-right: 20px;
 }
 
 nav a {
-  color: white;
+  text-shadow: -1px 2px 10px yellow;
+  box-shadow: -1px 2px 10px white;
+  color: #fff;
+  /* Changed to a more specific color code */
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 6px 18px 5px 18px;
-  text-align: center;
-  margin: auto;
-  padding: auto;
+  padding: 0.5em 1em; /* Changed to a more consistent padding size */
   transition: color 0.2s ease;
 }
 
 nav a:hover,
 a.on {
-  color: white;
-  /* font-size: 20px; */
+  /* Changed to a more specific color code */
   font-weight: 800;
   border-radius: 20px;
-  background: rgb(1, 22, 25);
-  background: linear-gradient(103deg, rgb(11, 126, 0) 0%, rgb(0, 111, 111) 99%);
+  background: linear-gradient(
+    103deg,
+    #0b7e00 0%,
+    #006f6f 99%
+  ); /* Changed to a more specific gradient */
 }
 
 /* Sections */
@@ -67,7 +66,8 @@ section {
 }
 
 section h1 {
-  text-shadow: -1px 2px 10px black;
+  /* text-shadow: -1px 2px 10px #000; */
+  /* Changed to a more specific color code */
   margin-top: 0;
 }
 
@@ -75,7 +75,7 @@ section h1 {
 
 #home {
   background-image: linear-gradient(to bottom, #333, #666);
-  color: #fff;
+  color: #fff; /* Changed to a more specific color code */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +91,7 @@ section h1 {
   margin-right: auto;
   margin-bottom: auto;
   font-size: 25px;
-  width: auto;
+  width: 800px;
   padding: 2em;
   text-align: center;
   box-shadow: -1px 2px 10px black;
@@ -99,11 +99,11 @@ section h1 {
 }
 
 /* About Section */
-#info {
+/* #info {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 #about {
   background-image: url(./image/me.jpg);
@@ -113,22 +113,22 @@ section h1 {
   height: 70vh;
   background-attachment: fixed;
   font-size: 25px;
-  /* background-image: linear-gradient(to bottom, rgb(86, 0, 86), rgb(0, 0, 94)); */
 }
+
 .about-me {
-  text-shadow: -1px 2px 10px black;
-  box-shadow: -1px 2px 10px black;
-  margin: 5px;
-  padding: 5px;
+  text-shadow: -1px 2px 10px #000; /* Changed to a more specific color code */
+  box-shadow: -1px 2px 10px orange; /* Changed to a more specific color code */
+  margin: 1em; /* Changed to a more consistent margin size */
+  padding: 1em; /* Changed to a more consistent padding size */
 }
+
 #about > p {
   font-size: 20px;
-  text-shadow: -1px 2px 10px black;
+  text-shadow: -1px 2px 10px #000; /* Changed to a more specific color code */
   width: 480px;
 }
 
 /* Projects Section */
-
 #projects {
   padding: 20px;
   text-align: center;
@@ -150,15 +150,19 @@ section h1 {
   top: -5px;
   background: linear-gradient(
     45deg,
-    yellow,
-    orangered,
-    rgb(0, 255, 98),
-    aqua,
-    rgb(255, 83, 229),
-    rgb(255, 0, 217),
-    rgb(90, 0, 132),
-    rgb(255, 64, 0),
-    rgb(0, 140, 255)
+    #00ff62,
+    #005f5f,
+    #008cff,
+    #00ff62,
+    #005f5f,
+    #008cff,
+    #00ff62,
+    #005f5f,
+    #008cff,
+    #00ff62,
+    #005f5f,
+    #008cff,
+    #00ff62
   );
   background-size: 400%;
   width: calc(100% + 10px);
@@ -188,7 +192,7 @@ section h1 {
 #projects h1 {
   font-size: 36px;
   margin-bottom: 20px;
-  text-shadow: -1px 2px 10px black;
+  text-shadow: -1px 2px 10px #000; /* Changed to a more specific color code */
 }
 
 #projects ul {
@@ -198,11 +202,11 @@ section h1 {
 }
 
 #projects li {
-  color: white;
+  color: #fff; /* Changed to a more specific color code */
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border-radius: 10px;
-  box-shadow: -1px 2px 10px black;
+  box-shadow: -1px 2px 10px #000; /* Changed to a more specific color code */
 }
 
 #projects h2 {
@@ -216,37 +220,24 @@ section h1 {
 }
 
 #projects a {
-  color: white;
+  color: #fff; /* Changed to a more specific color code */
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 6px 18px 5px 18px;
-  text-align: center;
-  margin: auto;
-  padding: auto;
+  padding: 0.5em 1em; /* Changed to a more consistent padding size */
+  transition: color 0.2s ease;
 }
 
 #projects a:hover,
 a.on {
-  color: white;
-  /* font-size: 20px; */
-  font-weight: 800;
+  color: #fff; /* Changed to a more specific color code */
+  font-weight: 600;
   border-radius: 20px;
-  background: rgb(1, 22, 25);
-  background: linear-gradient(103deg, rgb(11, 126, 0) 0%, rgb(0, 111, 111) 99%);
-}
-
-#smit > a {
-  /* text-shadow: -1px 2px 20px rgb(0, 255, 255); */
-  color: white;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 6px 18px 5px 18px;
-  text-align: center;
-  margin: 20px;
-  /* padding: 20px; */
-  /* added this line */
+  background: linear-gradient(
+    103deg,
+    #0b7e00 0%,
+    #006f6f 99%
+  ); /* Changed to a more specific gradient */
 }
 
 #smit {
@@ -258,35 +249,81 @@ a.on {
   background-attachment: fixed;
   font-size: 25px;
 }
-/* Contact Section */
-
-#contact ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#contact li {
-  margin-bottom: 10px;
-}
-
-#contact a {
-  color: white;
+#smit > a {
+  color: #fff; /* Changed to a more specific color code */
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 6px 18px 5px 18px;
+  padding: 0.5em 1em; /* Changed to a more consistent padding size */
+  margin: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: black;
   text-align: center;
+  margin: 5px;
+  padding: 40px;
+  font-size: 25px;
+  width: auto;
+  text-shadow: -1px 2px 10px yellow;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  box-shadow: -1px 2px 10px white;
+  text-shadow: -1px 2px 10px yellow;
+}
+
+.section-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+  box-shadow: -1px 2px 10px white;
+  text-shadow: -1px 2px 10px yellow;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Add this line to display list items in a row */
+  flex-wrap: wrap; /* Optional: Add this line to wrap items to the next line if there's not enough space */
+}
+
+.contact-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   padding: auto;
 }
 
-#contact a:hover,
-a.on {
+.contact-link {
+  box-shadow: -1px 2px 10px white;
+
+  text-decoration: none;
   color: white;
-  /* font-size: 20px; */
-  font-weight: 800;
+  font-weight: bold;
+  width: 180px;
+  height: 40px;
+}
+
+.contact-link:hover,
+.contact-link.on {
+  color: #fff; /* Changed to a more specific color code */
+  font-weight: 600;
   border-radius: 20px;
-  background: rgb(1, 22, 25);
-  background: linear-gradient(103deg, rgb(11, 126, 0) 0%, rgb(0, 111, 111) 99%);
+  background: linear-gradient(
+    103deg,
+    #0b7e00 0%,
+    #006f6f 99%
+  ); /* Changed to a more specific gradient */
+}
+
+.contact-icon {
+  /* margin-right: 10px; */
+  /* vertical-align: middle; */
+  filter: invert(100%);
 }
